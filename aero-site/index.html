@@ -1,0 +1,61 @@
+<!doctype html><html lang="en" class="lock"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>AERØ — Feel the Fizz</title>
+<meta name="description" content="AERØ is a next-generation sparkling drink. Scroll through a cinematic 3D world of fruit, ice and water and pick your flavor.">
+<meta name="theme-color" content="#FFF9EF">
+<meta property="og:type" content="website"><meta property="og:title" content="AERØ — Feel the Fizz"><meta property="og:description" content="A little fizz. A whole new feeling. Explore the flavors in an interactive 3D experience.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AB%A7%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><noscript><link rel="stylesheet" href="css/no-script.css"></noscript></head><body>
+<div id="pre" aria-hidden="true"><span class="pre-l">AERØ</span><span class="pre-n" id="pn">000</span><span class="pre-t">Loading the fizz</span></div>
+<div id="cur" aria-hidden="true"><i></i><b></b><em></em></div>
+<canvas id="fog" aria-hidden="true"></canvas><div id="fogh" aria-hidden="true">Wipe the glass</div>
+<div id="gauge" aria-hidden="true"><div class="gl"><div class="gf"><b></b><b></b><b></b><b></b></div></div></div>
+<noscript><p class="no-script-note">AERØ is an interactive 3D experience and needs JavaScript. Please enable JavaScript to continue.</p></noscript>
+<canvas id="gl" aria-hidden="true"></canvas>
+<nav aria-label="Main"><a class="logo" href="#hero">AERØ</a><a class="l" href="#flavors">Flavors</a><a class="l" href="#story">The Experience</a><a class="l" href="#ingredients">Our Ingredients</a><a class="l" href="#shop">Shop</a><button class="cartb" id="cb">Cart <b id="cc">0</b></button><button class="burger" id="bg" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></nav>
+<div id="menu"><a href="#flavors">Flavors</a><a href="#story">The Experience</a><a href="#ingredients">Our Ingredients</a><a href="#shop">Shop</a></div>
+
+<div id="journey"><div class="stage"><section id="hero" class="on"><h1 aria-label="Pop into another world."><span class="w"><i>POP INTO</i></span><span class="w l2"><i>ANOTHER</i></span><span class="w"><i>WORLD.</i></span></h1>
+<div class="hb"><p>A little fizz. A whole new feeling.</p><a class="cta mag" href="#flavors"><span>EXPLORE THE FLAVORS</span></a></div></section>
+
+<section id="flavors" class="pin"><div class="in"><h2>Pick a can. Change the weather.</h2>
+<div class="fbar"><div><div class="chips" id="fc" role="group" aria-label="Flavors"></div></div><button class="cta mag" id="more"><span>Open this flavor</span></button></div></div></section>
+
+<div id="story" role="presentation"><div class="sticky"><div class="cap on"><h2>The drop.</h2><p>One drop breaks the surface of the water.</p></div><div class="cap"><h2>The flavor burst.</h2><p>The can bursts up through the surface in a spray of bubbles and fruit.</p></div><div class="cap"><h2>Inside the fizz.</h2><p>Closer now: every bubble is a tiny lens.</p></div></div></div>
+
+<section id="collection" class="pin"><div class="in"><h2>The collection.</h2><p>Four cans, four moods. Tap one to see it up close.</p></div></section>
+
+<section id="ingredients" class="pin"><div class="in ingredients-content"><h2>REAL FLAVOR. UNREAL FEELING.</h2><div class="pil"><div><h3>Bright, fruit-inspired flavors</h3><p>Each can is built around two fruits or herbs, named right on the label.</p></div><div><h3>A sparkling texture</h3><p>Fine carbonation for a crisp, light finish.</p></div><div><h3>Ingredient transparency</h3><p>Full ingredient lists sit beside every flavor in the shop.</p></div></div></div></section></div></div>
+
+<section id="mf"><p class="mf" id="mft">Bright fruit flavors. Fine, lively bubbles. Every ingredient listed. That is the whole idea.</p></section>
+<div id="mq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+
+<section id="quiz" class="sec2"><div><h2>Not sure? Find your flavor.</h2><p class="section-intro">Three quick questions, one perfect can.</p></div><div class="card" id="qbody" aria-live="polite"></div></section>
+
+<section id="shop"><div class="panel"><h2 class="shop-heading">Shop</h2><p class="demo">Demo store: sample prices, no payment is processed.</p><div class="chips" id="sc" role="group" aria-label="Flavor"></div><h3 id="sn"></h3><p id="sd"></p><div class="row" id="sz" role="group" aria-label="Pack size"></div><div class="row"><div class="qty"><button id="qm" aria-label="Decrease quantity">−</button><output id="qv" aria-live="polite">1</output><button id="qp" aria-label="Increase quantity">+</button></div><button class="cta mag" id="add"><span>Add to cart · <b id="pr"></b></span></button></div><details><summary>Ingredients and nutrition</summary><p id="si"></p><p>Per 12 fl oz can, demo values for a fictional product: 40 calories, 9 g total sugars, 0 mg sodium.</p></details></div></section>
+
+<section id="mix" class="sec2"><div><h2>Build your own 12&#8209;pack.</h2><p class="section-intro">Any mix of flavors you like. Sample price, no real payment.</p></div><div class="card"><div id="mxl" class="mix-list"></div><div class="row space-between"><b id="mxc" aria-live="polite">0 / 12</b><button class="ghost button-small" id="mxf">3 of each</button></div><div class="bar" id="mxb"><i></i></div><button class="cta mag" id="mxa" disabled><span>Pick 12</span></button></div></section>
+
+<section id="faq"><h2 class="faq-heading">Good to know.</h2><div class="fq">
+<details><summary>Is this a real store?</summary><p>No. This is a demo: the cart works, but prices are samples and no payment is processed.</p></details>
+<details><summary>What is in each flavor?</summary><p>Every flavor's ingredient list is in the shop under "Ingredients and nutrition". Always check the can itself for the final ingredient information.</p></details>
+<details><summary>How should I serve it?</summary><p>Serve it cold, straight from the fridge or over ice.</p></details>
+<details><summary>Can I recycle the can?</summary><p>Aluminum cans are widely recyclable. Check your local recycling rules and recycle the empty can.</p></details>
+<details><summary>Shipping and returns?</summary><p>Placeholder text for this demo. Replace it with your own delivery areas, delivery times and return terms before launch.</p></details>
+<details><summary>How do I contact you?</summary><p>Placeholder: hello@example.com. Replace it with your own contact details.</p></details>
+</div><p class="demo policy-note">Sample content. Replace with your own policies before launch.</p></section>
+
+<div id="detail" role="dialog" aria-modal="true" aria-labelledby="dn"><div class="dp"><h2 id="dn"></h2><p id="ds" class="flavor-description"></p><p id="dd"></p><p id="di" class="flavor-ingredients"></p><div class="row"><button class="cta" id="dbuy"><span>Shop this flavor</span></button><button class="ghost" id="dx">Close</button></div></div></div>
+
+<aside id="cart" aria-label="Cart"><div class="row space-between"><h3 class="cart-heading">Cart</h3><button class="ghost button-small" id="cx">Close</button></div><p class="demo">Demo cart. Checkout is not connected.</p><ul id="cl"></ul><div class="row space-between"><b>Total (demo)</b><b id="ct">$0.00</b></div><button class="cta" id="co"><span>Demo checkout</span></button></aside>
+<div id="toast" role="status"></div>
+<div id="hud"><button id="snd" aria-pressed="false">Sound off</button><span id="hl">Intro</span><i id="hp"></i></div>
+
+<footer id="footer"><svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V30C1200 80 1000 0 720 35S240 70 0 25Z"/></svg><div id="bubs" aria-hidden="true"></div>
+<div class="ft"><div><p id="msg" aria-live="off"></p><form id="nf" class="newsletter-form"><label class="sr newsletter-label" for="em">Email</label><input id="em" type="email" placeholder="Your email" required><button class="cta" type="submit"><span>Join the fizz</span></button></form></div>
+<div><a href="#flavors">Flavors</a><a href="#story">The Experience</a><a href="#ingredients">Our Ingredients</a><a href="#shop">Shop</a><a href="#quiz">Find your flavor</a><a href="#mix">Build a pack</a><a href="#faq">FAQ</a></div><div><a class="soc" href="#footer">Instagram</a><a class="soc" href="#footer">TikTok</a><a class="soc" href="#footer">YouTube</a></div></div>
+<div class="fw" aria-hidden="true"><span class="fl">A</span><span class="fl">E</span><span class="fl">R</span><span class="fl">Ø</span></div></footer>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script></body></html>
